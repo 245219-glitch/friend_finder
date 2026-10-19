@@ -6,6 +6,7 @@ maze = {
     "Room2": ["Exit"],
     "Trap": [],
     "Exit": [],
+    "Vault": [],
 }
 
 def dfs_search(maze, room, exit_room, visited):
