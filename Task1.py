@@ -4,12 +4,13 @@ network = {
     "Sara": ["Ali", "Omar"],
     "Zara": ["Bilal", "Hira"],
     "Omar": ["Sara"],
-    "Hira": ["Zara"],
+    "Hira": ["Zara","Fatima"],
+    "Fatima": ["Hira"]
 }
 
 def bfs_shortest_path(graph, start, goal):
     visited = [start]
-    queue = [[start]]          # queue stores the whole path, not just the node
+    queue = [[start]]          
 
     while queue:
         path = queue.pop(0)
